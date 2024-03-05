@@ -1,0 +1,139 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/mbedtls",
+			"paths" : 
+			[
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/aes.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/aria.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/asn1.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/asn1write.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/base64.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/bignum.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/build_info.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/camellia.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/ccm.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/chacha20.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/chachapoly.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/check_config.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/cipher.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/cmac.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/compat-2.x.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/config_psa.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/constant_time.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/debug.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/des.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/dhm.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/ecdh.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/ecjpake.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/ecp.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/entropy.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/error.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/gcm.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/hkdf.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/hmac_drbg.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/legacy_or_psa.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/lms.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/md.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/md5.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/memory_buffer_alloc.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/net_sockets.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/nist_kw.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/oid.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/pem.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/pk.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/pkcs12.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/pkcs5.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/pkcs7.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/platform.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/platform_time.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/platform_util.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/poly1305.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/private_access.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/psa_util.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/ripemd160.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/rsa.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/sha1.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/sha256.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/sha512.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/ssl.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/ssl_cache.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/ssl_cookie.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/ssl_ticket.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/threading.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/timing.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/version.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/x509.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/mbedtls/x509_csr.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/psa",
+			"paths" : 
+			[
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_builtin_composites.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_builtin_primitives.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_compat.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_config.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_driver_common.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_composites.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_primitives.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_extra.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_platform.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_se_driver.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_sizes.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_struct.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_types.h",
+				"/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include/psa/crypto_values.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "esp-idf/mbedtls/mbedtls/include",
+		"source" : "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls/include"
+	}
+}

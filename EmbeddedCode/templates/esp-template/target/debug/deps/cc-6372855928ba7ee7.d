@@ -1,0 +1,11 @@
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/debug/deps/libcc-6372855928ba7ee7.rmeta: /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/lib.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/windows/mod.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/windows/find_tools.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/command_helpers.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/tool.rs
+
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/debug/deps/libcc-6372855928ba7ee7.rlib: /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/lib.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/windows/mod.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/windows/find_tools.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/command_helpers.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/tool.rs
+
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/debug/deps/cc-6372855928ba7ee7.d: /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/lib.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/windows/mod.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/windows/find_tools.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/command_helpers.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/tool.rs
+
+/Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/lib.rs:
+/Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/windows/mod.rs:
+/Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/windows/find_tools.rs:
+/Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/command_helpers.rs:
+/Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.88/src/tool.rs:

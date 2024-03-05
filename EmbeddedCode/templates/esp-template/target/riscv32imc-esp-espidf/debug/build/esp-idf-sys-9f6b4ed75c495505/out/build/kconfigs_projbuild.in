@@ -1,0 +1,5 @@
+source "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/bootloader/Kconfig.projbuild"
+source "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/esp_app_format/Kconfig.projbuild"
+source "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/esp_rom/Kconfig.projbuild"
+source "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/esptool_py/Kconfig.projbuild"
+source "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/partition_table/Kconfig.projbuild"

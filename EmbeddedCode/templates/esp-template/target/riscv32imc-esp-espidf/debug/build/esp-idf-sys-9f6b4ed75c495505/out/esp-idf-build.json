@@ -1,0 +1,14 @@
+{
+  "esp_idf_dir": "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2",
+  "exported_path_var": "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/tools/cmake/3.24.0/CMake.app/Contents/bin:/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin:/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/tools/ninja/1.10.2/:/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/tools:/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/python_env/idf5.0_py3.11_env/bin:/Users/willa/anaconda3/bin:/Users/willa/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/willa/.cargo/bin",
+  "venv_python": "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/python_env/idf5.0_py3.11_env/bin/python",
+  "build_dir": "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build",
+  "project_dir": "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out",
+  "compiler": "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin/riscv32-esp-elf-gcc",
+  "mcu": "esp32c3",
+  "sdkconfig": null,
+  "sdkconfig_defaults": [
+    "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/gen-sdkconfig.defaults",
+    "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/sdkconfig.defaults"
+  ]
+}

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/CMakeFiles/bootloader
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/CMakeFiles/bootloader.rule
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/CMakeFiles/bootloader-complete.rule
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

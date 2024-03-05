@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/riscv32imc-esp-espidf/debug/build/esp-idf-sys-9f6b4ed75c495505/out/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

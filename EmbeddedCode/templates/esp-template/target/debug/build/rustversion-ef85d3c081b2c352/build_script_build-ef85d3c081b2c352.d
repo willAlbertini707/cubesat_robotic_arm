@@ -1,0 +1,6 @@
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/debug/build/rustversion-ef85d3c081b2c352/build_script_build-ef85d3c081b2c352: /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustversion-1.0.14/build/build.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustversion-1.0.14/build/rustc.rs
+
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/target/debug/build/rustversion-ef85d3c081b2c352/build_script_build-ef85d3c081b2c352.d: /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustversion-1.0.14/build/build.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustversion-1.0.14/build/rustc.rs
+
+/Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustversion-1.0.14/build/build.rs:
+/Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rustversion-1.0.14/build/rustc.rs:

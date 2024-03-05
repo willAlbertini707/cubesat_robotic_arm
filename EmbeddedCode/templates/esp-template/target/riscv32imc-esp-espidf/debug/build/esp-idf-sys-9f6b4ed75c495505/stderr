@@ -1,0 +1,258 @@
+Build configuration: BuildConfig {
+    esp_idf_tools_install_dir: None,
+    esp_idf_sdkconfig: None,
+    esp_idf_sdkconfig_defaults: None,
+    mcu: Some(
+        "esp32c3",
+    ),
+    native: NativeConfig {
+        esp_idf_version: Some(
+            Tag(
+                "v5.0.2",
+            ),
+        ),
+        esp_idf_repository: None,
+        esp_idf_cmake_generator: None,
+        idf_path: None,
+        extra_components: [],
+        esp_idf_components: None,
+        esp_idf_component_manager: None,
+    },
+    esp_idf_sys_root_crate: None,
+}
+Using managed esp-idf repository: RemoteSdk { repo_url: None, git_ref: Tag("v5.0.2") }
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2'...
+Note: switching to '5181de8ac5ec5e18f04f634da8ce173b7ef5ab73'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Updating files:  98% (9826/9984)Updating files:  99% (9885/9984)Updating files: 100% (9984/9984)Updating files: 100% (9984/9984), done.
+Submodule 'components/bootloader/subproject/components/micro-ecc/micro-ecc' (https://github.com/kmackay/micro-ecc.git) registered for path 'components/bootloader/subproject/components/micro-ecc/micro-ecc'
+Submodule 'components/bt/controller/lib_esp32' (https://github.com/espressif/esp32-bt-lib.git) registered for path 'components/bt/controller/lib_esp32'
+Submodule 'components/bt/controller/lib_esp32c2/esp32c2-bt-lib' (https://github.com/espressif/esp32c2-bt-lib.git) registered for path 'components/bt/controller/lib_esp32c2/esp32c2-bt-lib'
+Submodule 'components/bt/controller/lib_esp32c3_family' (https://github.com/espressif/esp32c3-bt-lib.git) registered for path 'components/bt/controller/lib_esp32c3_family'
+Submodule 'components/bt/controller/lib_esp32h2/esp32h2-bt-lib' (https://github.com/espressif/esp32h2-bt-lib.git) registered for path 'components/bt/controller/lib_esp32h2/esp32h2-bt-lib'
+Submodule 'components/bt/host/nimble/nimble' (https://github.com/espressif/esp-nimble.git) registered for path 'components/bt/host/nimble/nimble'
+Submodule 'components/cmock/CMock' (https://github.com/ThrowTheSwitch/CMock.git) registered for path 'components/cmock/CMock'
+Submodule 'components/esp_phy/lib' (https://github.com/espressif/esp-phy-lib.git) registered for path 'components/esp_phy/lib'
+Submodule 'components/esp_wifi/lib' (https://github.com/espressif/esp32-wifi-lib.git) registered for path 'components/esp_wifi/lib'
+Submodule 'components/heap/tlsf' (https://github.com/espressif/tlsf.git) registered for path 'components/heap/tlsf'
+Submodule 'components/ieee802154/lib' (https://github.com/espressif/esp-ieee802154-lib.git) registered for path 'components/ieee802154/lib'
+Submodule 'components/json/cJSON' (https://github.com/DaveGamble/cJSON.git) registered for path 'components/json/cJSON'
+Submodule 'components/lwip/lwip' (https://github.com/espressif/esp-lwip.git) registered for path 'components/lwip/lwip'
+Submodule 'components/mbedtls/mbedtls' (https://github.com/espressif/mbedtls.git) registered for path 'components/mbedtls/mbedtls'
+Submodule 'components/mqtt/esp-mqtt' (https://github.com/espressif/esp-mqtt.git) registered for path 'components/mqtt/esp-mqtt'
+Submodule 'components/openthread/lib' (https://github.com/espressif/esp-thread-lib.git) registered for path 'components/openthread/lib'
+Submodule 'components/openthread/openthread' (https://github.com/espressif/openthread.git) registered for path 'components/openthread/openthread'
+Submodule 'components/protobuf-c/protobuf-c' (https://github.com/protobuf-c/protobuf-c.git) registered for path 'components/protobuf-c/protobuf-c'
+Submodule 'components/spiffs/spiffs' (https://github.com/pellepl/spiffs.git) registered for path 'components/spiffs/spiffs'
+Submodule 'components/unity/unity' (https://github.com/ThrowTheSwitch/Unity.git) registered for path 'components/unity/unity'
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/bootloader/subproject/components/micro-ecc/micro-ecc'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/bt/controller/lib_esp32'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/bt/controller/lib_esp32c2/esp32c2-bt-lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/bt/controller/lib_esp32c3_family'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/bt/controller/lib_esp32h2/esp32h2-bt-lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/bt/host/nimble/nimble'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/cmock/CMock'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/esp_phy/lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/esp_wifi/lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/heap/tlsf'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/ieee802154/lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/json/cJSON'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/lwip/lwip'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mbedtls/mbedtls'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/mqtt/esp-mqtt'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/openthread/lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/openthread/openthread'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/protobuf-c/protobuf-c'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/spiffs/spiffs'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/unity/unity'...
+From https://github.com/kmackay/micro-ecc
+ * branch            d037ec89546fad14b5c4d5456c2e23a71e554966 -> FETCH_HEAD
+From https://github.com/espressif/esp32-bt-lib
+ * branch            f18eabd48cb91d779e56e985512bf210741aa700 -> FETCH_HEAD
+From https://github.com/espressif/esp32c2-bt-lib
+ * branch            10a3ea96e083dd0a7a18089407361fd52f0cbc47 -> FETCH_HEAD
+From https://github.com/espressif/esp32c3-bt-lib
+ * branch            bba9af9259e0999ef246426d31a793fe0a3ff4db -> FETCH_HEAD
+From https://github.com/espressif/esp32h2-bt-lib
+ * branch            f502278684195b9c20626ec8bb25430030d2ff23 -> FETCH_HEAD
+From https://github.com/espressif/esp-nimble
+ * branch            9fd023d47f3b77961407939d8e63888bace167ac -> FETCH_HEAD
+From https://github.com/ThrowTheSwitch/CMock
+ * branch            eeecc49ce8af123cf8ad40efdb9673e37b56230f -> FETCH_HEAD
+Submodule 'vendor/c_exception' (https://github.com/throwtheswitch/cexception.git) registered for path 'components/cmock/CMock/vendor/c_exception'
+Submodule 'vendor/unity' (https://github.com/throwtheswitch/unity.git) registered for path 'components/cmock/CMock/vendor/unity'
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/cmock/CMock/vendor/c_exception'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/cmock/CMock/vendor/unity'...
+From https://github.com/throwtheswitch/cexception
+ * branch            71b47be7c950f1bf5f7e5303779fa99a16224bb6 -> FETCH_HEAD
+From https://github.com/throwtheswitch/unity
+ * branch            cf949f45ca6d172a177b00da21310607b97bc7a7 -> FETCH_HEAD
+From https://github.com/espressif/esp-phy-lib
+ * branch            b3e4adbe7663700ff6950d9d420e112a743f586f -> FETCH_HEAD
+From https://github.com/espressif/esp32-wifi-lib
+ * branch            8f3aeb20d137665f46e3727494f846ab50eb4807 -> FETCH_HEAD
+From https://github.com/espressif/tlsf
+ * branch            8c9cd0517adf99e363812e9a295dfe3898fdd345 -> FETCH_HEAD
+From https://github.com/espressif/esp-ieee802154-lib
+ * branch            2b52a261fef2ad7b630e11866dca567d17170401 -> FETCH_HEAD
+From https://github.com/DaveGamble/cJSON
+ * branch            d348621ca93571343a56862df7de4ff3bc9b5667 -> FETCH_HEAD
+From https://github.com/espressif/esp-lwip
+ * branch            d5e56d06658ae11292be1baea56204f7120b6fa7 -> FETCH_HEAD
+From https://github.com/espressif/mbedtls
+ * branch            e39975969d548572a39875ad29abd88b23285f94 -> FETCH_HEAD
+From https://github.com/espressif/esp-mqtt
+ * branch            ae53d799da294f03ef65c33e88fa33648e638134 -> FETCH_HEAD
+From https://github.com/espressif/esp-thread-lib
+ * branch            698e8386c31f2c34e167b65f72a6b2553e838dd9 -> FETCH_HEAD
+From https://github.com/espressif/openthread
+ * branch            e64ba13faa865aa7febd5cb7dc7eb52ff19a2c5c -> FETCH_HEAD
+From https://github.com/protobuf-c/protobuf-c
+ * branch            f224ab2eeb648a818eb20687d7150a285442c907 -> FETCH_HEAD
+From https://github.com/pellepl/spiffs
+ * branch            0dbb3f71c5f6fae3747a9d935372773762baf852 -> FETCH_HEAD
+From https://github.com/ThrowTheSwitch/Unity
+ * branch            7d2bf62b7e6afaf38153041a9d53c21aeeca9a25 -> FETCH_HEAD
+Using esp-idf v5.0.2 at '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2'
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1'...
+Note: switching to 'cbce221e88d52665523093b2b6dd0ebe3f1243f1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Updating files:  68% (7928/11619)Updating files:  69% (8018/11619)Updating files:  70% (8134/11619)Updating files:  71% (8250/11619)Updating files:  72% (8366/11619)Updating files:  73% (8482/11619)Updating files:  74% (8599/11619)Updating files:  75% (8715/11619)Updating files:  76% (8831/11619)Updating files:  77% (8947/11619)Updating files:  78% (9063/11619)Updating files:  79% (9180/11619)Updating files:  80% (9296/11619)Updating files:  81% (9412/11619)Updating files:  82% (9528/11619)Updating files:  83% (9644/11619)Updating files:  84% (9760/11619)Updating files:  85% (9877/11619)Updating files:  86% (9993/11619)Updating files:  87% (10109/11619)Updating files:  88% (10225/11619)Updating files:  89% (10341/11619)Updating files:  90% (10458/11619)Updating files:  91% (10574/11619)Updating files:  92% (10690/11619)Updating files:  93% (10806/11619)Updating files:  94% (10922/11619)Updating files:  95% (11039/11619)Updating files:  96% (11155/11619)Updating files:  97% (11271/11619)Updating files:  98% (11387/11619)Updating files:  99% (11503/11619)Updating files: 100% (11619/11619)Updating files: 100% (11619/11619), done.
+Submodule 'components/bootloader/subproject/components/micro-ecc/micro-ecc' (https://github.com/kmackay/micro-ecc.git) registered for path 'components/bootloader/subproject/components/micro-ecc/micro-ecc'
+Submodule 'components/bt/controller/lib_esp32' (https://github.com/espressif/esp32-bt-lib.git) registered for path 'components/bt/controller/lib_esp32'
+Submodule 'components/bt/controller/lib_esp32c2/esp32c2-bt-lib' (https://github.com/espressif/esp32c2-bt-lib.git) registered for path 'components/bt/controller/lib_esp32c2/esp32c2-bt-lib'
+Submodule 'components/bt/controller/lib_esp32c3_family' (https://github.com/espressif/esp32c3-bt-lib.git) registered for path 'components/bt/controller/lib_esp32c3_family'
+Submodule 'components/bt/controller/lib_esp32c6/esp32c6-bt-lib' (https://github.com/espressif/esp32c6-bt-lib.git) registered for path 'components/bt/controller/lib_esp32c6/esp32c6-bt-lib'
+Submodule 'components/bt/controller/lib_esp32h2/esp32h2-bt-lib' (https://github.com/espressif/esp32h2-bt-lib.git) registered for path 'components/bt/controller/lib_esp32h2/esp32h2-bt-lib'
+Submodule 'components/bt/host/nimble/nimble' (https://github.com/espressif/esp-nimble.git) registered for path 'components/bt/host/nimble/nimble'
+Submodule 'components/cmock/CMock' (https://github.com/ThrowTheSwitch/CMock.git) registered for path 'components/cmock/CMock'
+Submodule 'components/esp_coex/lib' (https://github.com/espressif/esp-coex-lib.git) registered for path 'components/esp_coex/lib'
+Submodule 'components/esp_phy/lib' (https://github.com/espressif/esp-phy-lib.git) registered for path 'components/esp_phy/lib'
+Submodule 'components/esp_wifi/lib' (https://github.com/espressif/esp32-wifi-lib.git) registered for path 'components/esp_wifi/lib'
+Submodule 'components/heap/tlsf' (https://github.com/espressif/tlsf.git) registered for path 'components/heap/tlsf'
+Submodule 'components/ieee802154/lib' (https://github.com/espressif/esp-ieee802154-lib.git) registered for path 'components/ieee802154/lib'
+Submodule 'components/json/cJSON' (https://github.com/DaveGamble/cJSON.git) registered for path 'components/json/cJSON'
+Submodule 'components/lwip/lwip' (https://github.com/espressif/esp-lwip.git) registered for path 'components/lwip/lwip'
+Submodule 'components/mbedtls/mbedtls' (https://github.com/espressif/mbedtls.git) registered for path 'components/mbedtls/mbedtls'
+Submodule 'components/mqtt/esp-mqtt' (https://github.com/espressif/esp-mqtt.git) registered for path 'components/mqtt/esp-mqtt'
+Submodule 'components/openthread/lib' (https://github.com/espressif/esp-thread-lib.git) registered for path 'components/openthread/lib'
+Submodule 'components/openthread/openthread' (https://github.com/espressif/openthread.git) registered for path 'components/openthread/openthread'
+Submodule 'components/protobuf-c/protobuf-c' (https://github.com/protobuf-c/protobuf-c.git) registered for path 'components/protobuf-c/protobuf-c'
+Submodule 'components/spiffs/spiffs' (https://github.com/pellepl/spiffs.git) registered for path 'components/spiffs/spiffs'
+Submodule 'components/unity/unity' (https://github.com/ThrowTheSwitch/Unity.git) registered for path 'components/unity/unity'
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/bootloader/subproject/components/micro-ecc/micro-ecc'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/bt/controller/lib_esp32'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/bt/controller/lib_esp32c2/esp32c2-bt-lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/bt/controller/lib_esp32c3_family'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/bt/controller/lib_esp32c6/esp32c6-bt-lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/bt/controller/lib_esp32h2/esp32h2-bt-lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/bt/host/nimble/nimble'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/cmock/CMock'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/esp_coex/lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/esp_phy/lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/esp_wifi/lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/heap/tlsf'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/ieee802154/lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/json/cJSON'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/lwip/lwip'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/mbedtls/mbedtls'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/mqtt/esp-mqtt'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/openthread/lib'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/openthread/openthread'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/protobuf-c/protobuf-c'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/spiffs/spiffs'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/unity/unity'...
+From https://github.com/kmackay/micro-ecc
+ * branch            d037ec89546fad14b5c4d5456c2e23a71e554966 -> FETCH_HEAD
+From https://github.com/espressif/esp32-bt-lib
+ * branch            26b2361bf7569eb46b68eebdf9f634ef4ed17660 -> FETCH_HEAD
+From https://github.com/espressif/esp32c2-bt-lib
+ * branch            8cc0fd4f9ca5f0e1128510e76d8dd73c012f9e53 -> FETCH_HEAD
+From https://github.com/espressif/esp32c3-bt-lib
+ * branch            d7513ebe88d7d207f6c062ce9381d347a0a70918 -> FETCH_HEAD
+From https://github.com/espressif/esp32c6-bt-lib
+ * branch            31146e6b988ed0f829dc9e6c6b6262a24206e57f -> FETCH_HEAD
+From https://github.com/espressif/esp32h2-bt-lib
+ * branch            3bd0211ba35a7e0b0bf8da9a43d84aa332d5371c -> FETCH_HEAD
+From https://github.com/espressif/esp-nimble
+ * branch            8a8585ac0bcf41331e022df8e413c3586d731bfb -> FETCH_HEAD
+From https://github.com/ThrowTheSwitch/CMock
+ * branch            eeecc49ce8af123cf8ad40efdb9673e37b56230f -> FETCH_HEAD
+Submodule 'vendor/c_exception' (https://github.com/throwtheswitch/cexception.git) registered for path 'components/cmock/CMock/vendor/c_exception'
+Submodule 'vendor/unity' (https://github.com/throwtheswitch/unity.git) registered for path 'components/cmock/CMock/vendor/unity'
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/cmock/CMock/vendor/c_exception'...
+Cloning into '/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf-5d813d762119857b/v5.1/components/cmock/CMock/vendor/unity'...
+From https://github.com/throwtheswitch/cexception
+ * branch            71b47be7c950f1bf5f7e5303779fa99a16224bb6 -> FETCH_HEAD
+From https://github.com/throwtheswitch/unity
+ * branch            cf949f45ca6d172a177b00da21310607b97bc7a7 -> FETCH_HEAD
+From https://github.com/espressif/esp-coex-lib
+ * branch            28e2858208c0f8720c43618e90dbbfaf6035ebf5 -> FETCH_HEAD
+From https://github.com/espressif/esp-phy-lib
+ * branch            89f0a98c976ddd7c56056fcdb57fd252b7b3f938 -> FETCH_HEAD
+From https://github.com/espressif/esp32-wifi-lib
+ * branch            1998c24da5c3c4a481075f0f4d659359e77fd414 -> FETCH_HEAD
+From https://github.com/espressif/tlsf
+ * branch            8c9cd0517adf99e363812e9a295dfe3898fdd345 -> FETCH_HEAD
+From https://github.com/DaveGamble/cJSON
+ * branch            d348621ca93571343a56862df7de4ff3bc9b5667 -> FETCH_HEAD
+From https://github.com/espressif/esp-lwip
+ * branch            dafc8225313a1ce00fb0b497d09f43ec7073857d -> FETCH_HEAD
+From https://github.com/espressif/mbedtls
+ * branch            f5fca55508d9d18961b10824d5cf5d8338c087f6 -> FETCH_HEAD
+From https://github.com/espressif/esp-mqtt
+ * branch            dffabb067fb3c39f486033d2e47eb4b1416f0c82 -> FETCH_HEAD
+From https://github.com/espressif/esp-thread-lib
+ * branch            2e5a3f236f8cd7c753fd8b8f775e48e8be5f08d6 -> FETCH_HEAD
+From https://github.com/espressif/openthread
+ * branch            091f68ed706ce7a4831802408cdd0b0b4f309e3b -> FETCH_HEAD
+From https://github.com/protobuf-c/protobuf-c
+ * branch            abc67a11c6db271bedbb9f58be85d6f4e2ea8389 -> FETCH_HEAD
+From https://github.com/pellepl/spiffs
+ * branch            0dbb3f71c5f6fae3747a9d935372773762baf852 -> FETCH_HEAD
+From https://github.com/ThrowTheSwitch/Unity
+ * branch            7d2bf62b7e6afaf38153041a9d53c21aeeca9a25 -> FETCH_HEAD
+error: patch failed: components/esp_app_format/esp_app_desc.c:12
+error: components/esp_app_format/esp_app_desc.c: patch does not apply
+/Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/tools/check_python_dependencies.py:12: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+Built components: riscv, esp_ringbuf, efuse, driver, esp_pm, mbedtls, esp_app_format, bootloader_support, bootloader, esptool_py, partition_table, esp_partition, app_update, spi_flash, pthread, esp_system, esp_rom, hal, log, heap, soc, esp_hw_support, freertos, newlib, cxx, esp_common, esp_timer, app_trace, esp_event, nvs_flash, esp_phy, vfs, lwip, esp_netif, wpa_supplicant, esp_wifi, bt, unity, cmock, console, http_parser, esp-tls, esp_adc, esp_eth, esp_gdbstub, esp_hid, tcp_transport, esp_http_client, esp_http_server, esp_https_ota, esp_https_server, esp_lcd, protobuf-c, protocomm, esp_local_ctrl, esp_psram, espcoredump, wear_levelling, sdmmc, fatfs, idf_test, ieee802154, json, mqtt, openthread, spiffs, ulp, usb, wifi_provisioning, main
+clang diag: /Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/spi_flash/include/esp_spi_flash.h:6:2: warning: esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-W#warnings]
+clang diag: /Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-W#warnings]
+clang diag: /Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/driver/deprecated/driver/adc.h:19:2: warning: "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-W#warnings]
+clang diag: /Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/driver/deprecated/driver/i2s.h:27:2: warning: "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress leagcy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-W#warnings]
+clang diag: /Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/driver/deprecated/driver/periph_ctrl.h:7:2: warning: driver/periph_ctrl.h header is no longer used, and will be removed in future versions. [-W#warnings]
+clang diag: /Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/driver/deprecated/driver/rmt.h:18:2: warning: "The legacy RMT driver is deprecated, please use driver/rmt_tx.h and/or driver/rmt_rx.h" [-W#warnings]
+clang diag: /Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/driver/deprecated/driver/rtc_cntl.h:7:2: warning: driver/rtc_cntl.h header is no longer used, and will be removed in future versions. [-W#warnings]
+clang diag: /Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/driver/deprecated/driver/sigmadelta.h:15:2: warning: "The legacy sigma-delta driver is deprecated, please use driver/sdm.h" [-W#warnings]
+clang diag: /Users/willa/Desktop/robotic_arm/EmbeddedCode/templates/esp-template/.embuild/espressif/esp-idf/v5.0.2/components/driver/deprecated/driver/timer.h:16:2: warning: "legacy timer group driver is deprecated, please migrate to driver/gptimer.h" [-W#warnings]
