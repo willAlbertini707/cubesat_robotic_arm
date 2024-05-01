@@ -1,0 +1,1 @@
+/Users/willa/Desktop/reaction_wheel/motor-controller/target/avr-atmega328p/debug/motor-controller.elf: /Users/willa/Desktop/reaction_wheel/motor-controller/src/main.rs /Users/willa/Desktop/reaction_wheel/motor-controller/src/motor_state.rs

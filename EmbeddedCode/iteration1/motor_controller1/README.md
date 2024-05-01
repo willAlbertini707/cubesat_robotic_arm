@@ -1,4 +1,4 @@
-arduino-template
+motor-controller
 ================
 
 Rust project for the _Arduino Uno_.

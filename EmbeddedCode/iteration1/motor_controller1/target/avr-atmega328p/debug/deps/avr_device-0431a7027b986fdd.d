@@ -1,0 +1,11 @@
+/Users/willa/Desktop/reaction_wheel/motor-controller/target/avr-atmega328p/debug/deps/libavr_device-0431a7027b986fdd.rmeta: /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/lib.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/asm.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/interrupt.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/generic.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/devices/mod.rs
+
+/Users/willa/Desktop/reaction_wheel/motor-controller/target/avr-atmega328p/debug/deps/libavr_device-0431a7027b986fdd.rlib: /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/lib.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/asm.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/interrupt.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/generic.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/devices/mod.rs
+
+/Users/willa/Desktop/reaction_wheel/motor-controller/target/avr-atmega328p/debug/deps/avr_device-0431a7027b986fdd.d: /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/lib.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/asm.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/interrupt.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/generic.rs /Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/devices/mod.rs
+
+/Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/lib.rs:
+/Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/asm.rs:
+/Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/interrupt.rs:
+/Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/generic.rs:
+/Users/willa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/avr-device-0.3.4/src/devices/mod.rs:
