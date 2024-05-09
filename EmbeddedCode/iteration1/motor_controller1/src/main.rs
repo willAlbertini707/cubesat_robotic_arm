@@ -6,13 +6,13 @@
 use panic_halt as _;
 use ufmt;
 use core::sync::atomic::{AtomicBool, Ordering};
-use arduino_hal::hal::port::PD2;
-use avr_device::interrupt::Mutex;
 use arduino_hal::port::{Pin, mode::Input, mode::Floating};
+use arduino_hal::simple_pwm::{Timer0Pwm, IntoPwmPin, *};
 
 // internal imports
-mod motor_state;
-use motor_state::Motor;
+// mod motor_state;
+mod motor_handler;
+use motor_handler::motor_interface::MotorInterface;
 
 // flag to detect interrupt
 static TRIGGERED: AtomicBool = AtomicBool::new(false);
@@ -32,10 +32,19 @@ fn main() -> ! {
     let pins = arduino_hal::pins!(dp);
     let mut serial = arduino_hal::default_serial!(dp, pins, 57600);
 
-    // define quad encoder pins
-    let a = pins.d2.into_floating_input();
+    // select timer for PWM
+    let timer0 = Timer0Pwm::new(dp.TC0, Prescaler::Prescale64);
+    
+    // create motor object
+    let mut motor_one = MotorInterface::new(
+        pins.d4.into_output(),
+        pins.d5.into_output(),
+        pins.d6.into_output().into_pwm(&timer0),
+        pins.d2.into_floating_input(),
+        pins.d3.into_floating_input(),
+    );
 
-    let b = pins.d3.into_floating_input();
+    // let pal = pins.d6.into_output().into_pwm(&timer0);
 
     // enable interrupts on PCIE2 (0b100)
     dp.EXINT.pcicr.write(|w| unsafe {w.bits(0b100)});
@@ -48,21 +57,15 @@ fn main() -> ! {
         avr_device::interrupt::enable();
     }
 
-    // create motor object
-    let mut motor1 = Motor::new(a.is_high(), b.is_high(), 8000);
 
     loop {
         // check if interrupt was triggered
         if TRIGGERED.load(Ordering::SeqCst) {
             TRIGGERED.store(false, Ordering::SeqCst);
-            let a_val = a.is_high();
-            let b_val = b.is_high();
-
-            motor1.update_motor_state(a_val, b_val);
-
-
-            // ufmt::uwriteln!(serial, "position: {}", motor1.get_position()).unwrap();
-            ufmt::uwriteln!(serial, "state: {}", motor1.state as i8).unwrap();
+            motor_one.update_position();
+            // ufmt::uwriteln!(serial, "Motor position: {}", motor_one.get_position()).unwrap();
         }
+
+        motor_one.turn_to_position(10);
     }
 }
