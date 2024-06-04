@@ -47,7 +47,8 @@ where
         en.enable();
         // set initial motor state
         let motor = Motor::new(a.is_high(), b.is_high(), 8000);
-
+        
+        // return struct
         MotorInterface{
             in1,
             in2,
@@ -82,19 +83,20 @@ where
             return true
         }
 
-        self.en.set_duty(125);
+        self.en.set_duty(80);
         return false
     }
 
-    pub fn update_position(&mut self) {
+    pub fn update_position(&mut self) 
+    {
         // update the state of the motor
         self.state.update_motor_state(self.a.is_high(), self.b.is_high());
     }
 
-    pub fn get_position(&self) -> i16 {
+    pub fn get_position(&self) -> i16 
+    {
         // return the position of the motor
         self.state.get_position()
     }
-
 }
 

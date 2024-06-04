@@ -4,10 +4,9 @@
 
 // external imports
 use panic_halt as _;
-use ufmt;
 use core::sync::atomic::{AtomicBool, Ordering};
-use arduino_hal::port::{Pin, mode::Input, mode::Floating};
-use arduino_hal::simple_pwm::{Timer0Pwm, IntoPwmPin, *};
+use arduino_hal::simple_pwm::{Timer0Pwm, IntoPwmPin, Prescaler};
+use arduino_hal::Peripherals;
 
 // internal imports
 // mod motor_state;
@@ -16,6 +15,13 @@ use motor_handler::motor_interface::MotorInterface;
 
 // flag to detect interrupt
 static TRIGGERED: AtomicBool = AtomicBool::new(false);
+static READ_SPI_REGISTER: AtomicBool = AtomicBool::new(false);
+
+#[avr_device::interrupt(atmega328p)]
+#[allow(non_snake_case)]
+fn SPI_STC() {
+    READ_SPI_REGISTER.store(true, Ordering::SeqCst);
+}
 
 // ISR for quad encoder pins
 #[avr_device::interrupt(atmega328p)]
@@ -29,6 +35,11 @@ fn PCINT2() {
 #[arduino_hal::entry]
 fn main() -> ! {
     let dp = arduino_hal::Peripherals::take().unwrap();
+
+    // setup spi and interrupts
+    set_up_spi_slave_mode(&dp);
+    let spi_read_reg_ptr: *mut u8 = dp.SPI.spdr.as_ptr();
+    
     let pins = arduino_hal::pins!(dp);
     let mut serial = arduino_hal::default_serial!(dp, pins, 57600);
 
@@ -57,15 +68,32 @@ fn main() -> ! {
         avr_device::interrupt::enable();
     }
 
+    let mut pos: i16 = 4500;
 
-    loop {
+    loop 
+    {
         // check if interrupt was triggered
         if TRIGGERED.load(Ordering::SeqCst) {
+            // clear flag
             TRIGGERED.store(false, Ordering::SeqCst);
             motor_one.update_position();
-            // ufmt::uwriteln!(serial, "Motor position: {}", motor_one.get_position()).unwrap();
         }
 
-        motor_one.turn_to_position(10);
+        // check if data came from SPI
+        if READ_SPI_REGISTER.load(Ordering::SeqCst) {
+            // clear flag
+            READ_SPI_REGISTER.store(false, Ordering::SeqCst);
+            pos = unsafe {spi_read_reg_ptr.read()} as i16;
+            // ufmt::uwriteln!(serial, "Position: {}", pos);
+        }
+
+        motor_one.turn_to_position(pos);
     }
+}
+
+
+fn set_up_spi_slave_mode(dp: &Peripherals)
+{
+    dp.PORTB.ddrb.write(|w| unsafe {w.bits(0b10000)});
+    dp.SPI.spcr.write(|w| unsafe {w.bits(0b11000000)});
 }
