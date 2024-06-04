@@ -13,14 +13,8 @@ use std::f64::consts::PI;
 use crate::arm_errors::RoboticArmError;
 
 // contain joint angles, linkage lengths, and up/down elbow solver
-pub struct RoboticArm 
+pub struct InverseKinematicSolver
 {
-	// joint and spool angles for robotic arm
-	joint_one: i16,
-	joint_two: i16,
-	joint_three: i16,
-	joint_four: i16,
-	spool: i16,
 	// linkage lengths
 	link1: f64,
 	link2: f64,
@@ -30,17 +24,12 @@ pub struct RoboticArm
 }
 
 
-impl RoboticArm 
+impl InverseKinematicSolver
 {
-	pub fn new(link1: f64, link2: f64, link3: f64) -> RoboticArm 
+	pub fn new(link1: f64, link2: f64, link3: f64) -> InverseKinematicSolver
 	{
-		RoboticArm
+		InverseKinematicSolver
 		{
-			joint_one: 0,
-			joint_two: 0,
-			joint_three: 0,
-			joint_four: 0,
-			spool: 0,
 			link1,
 			link2,
 			link3,
@@ -53,7 +42,7 @@ impl RoboticArm
 		self.link1 + self.link2 + self.link3
 	}
 
-	fn find_joint_angles(&self, x3: f64, y3: f64, si: f64) -> Result<[f64; 3], RoboticArmError>
+	pub fn find_joint_angles(&self, x3: f64, y3: f64, si: f64) -> Result<[f64; 3], RoboticArmError>
 	{
 
 		// ----------------------------- theta 2 ----------------------------------------
@@ -68,7 +57,7 @@ impl RoboticArm
 
 		if theta2.is_nan() 
 		{
-			return Err(RoboticArmError::Singularity("Singularity it theta 2".into()));
+			return Err(RoboticArmError::Singularity("Singularity in theta 2".into()));
 		}
 		// elbow down position
 		if self.up
@@ -118,7 +107,7 @@ impl RoboticArm
 
 
 
-// ----------------------------- tests -----------------------------------------------
+// ----------------------------- unit tests ----------------------------------------
 #[cfg(test)]
 mod tests 
 {
@@ -131,7 +120,7 @@ mod tests
 	{
 		// compare theta1 value to simulation value
 
-		let arm = RoboticArm::new(10.0, 7.0, 3.0);
+		let arm = InverseKinematicSolver::new(10.0, 7.0, 3.0);
 
 		let joint_angles = arm.find_joint_angles(-7.76, 6.9, 2.625).unwrap();
 		let actual_angles: [f64; 2] = [1.55637, 2.29710];
@@ -144,7 +133,7 @@ mod tests
 	fn test_joint_angles_nominal_theta2() 
 	{
 		// compare theta2 value to simulation value
-		let arm = RoboticArm::new(10.0, 7.0, 3.0);
+		let arm = InverseKinematicSolver::new(10.0, 7.0, 3.0);
 
 		let joint_angles = arm.find_joint_angles(-7.76, 6.9, 2.625).unwrap();
 		let actual_angles: [f64; 3] = [1.55637, 2.29710, 2.62535];
@@ -158,7 +147,7 @@ mod tests
 	{
 		// test if function produces singularity error when 
 		// requested EF coordinates are out of workspace
-		let arm = RoboticArm::new(10.0, 7.0, 3.0);
+		let arm = InverseKinematicSolver::new(10.0, 7.0, 3.0);
 		let e = arm.find_joint_angles(21.0, -0.5, 0.0);
 
 		match e {
@@ -167,7 +156,7 @@ mod tests
 				panic!();
 			},
 			Err(e) => assert_eq!(e, 
-				RoboticArmError::Singularity("Singularity it theta 2".into())),
+				RoboticArmError::Singularity("Singularity in theta 2".into())),
 		}
 	}
 }

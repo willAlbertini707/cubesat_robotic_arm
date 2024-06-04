@@ -1,11 +1,12 @@
 /*
 William Albertini
 
-This module is built to make sending the data easier.
-It provides a single struct that contains all user
-input. This can serialized and sent via TCP/IP to 
-raspberry pi.
+This module contains the DataHandler which formats
+the data from the controller. Other objects using 
+controller data interact with this struct
 */
+
+
 
 #[derive(Clone, Copy)]
 pub struct DataHandler
@@ -14,12 +15,17 @@ pub struct DataHandler
     pub y: i16,
     pub roll: i16,
     pub pitch: i16,
-    button1: i16,
-    button2: i16,
+    pub button1: i16,
+    pub button2: i16,
 }
 
 impl DataHandler 
 {
+    pub fn new(x: i16, y: i16, roll: i16, pitch: i16, button1: i16, button2: i16) -> DataHandler
+    {
+        DataHandler { x, y, roll, pitch, button1, button2 }
+    }
+
     pub fn from_buffer(buffer: &[i16; 6]) -> DataHandler 
     {
         DataHandler{
