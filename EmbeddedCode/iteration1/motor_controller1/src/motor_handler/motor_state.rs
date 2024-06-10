@@ -1,3 +1,21 @@
+/*
+William Albertini
+
+This module controls the logic for the
+motor state machine. The transfer from one
+state to another either decrements or
+imcrements a count. Transition states are 
+pre-defined and used to determine the direction 
+the motor is turning. Each encoder has a 
+specific number of encoder ticks per 
+revolution, and this information is used
+by the inverse kinematic solver (on the RPI) 
+to determine motor position.
+
+*/
+
+
+
 // constants for comparing state transitions
 // (past state)_(new state)
 const STATE1_STATE2: i8 = 0b0001;
@@ -22,12 +40,8 @@ pub enum MotorState {
 impl MotorState{
 
     fn new(a: bool, b: bool) -> MotorState {
-        /*
-        Creates a new motor state
-        a, b: boolean pin state (high, low) of quadrature encoder pins
-
-        output: motor state based on current position of encoder
-         */
+        
+        // check current pins and configures state
         if !a && !b {
             return MotorState::State1
         } else if !a && b {
@@ -95,6 +109,7 @@ impl Motor {
     }
 
     pub fn get_position(&self) -> i16 {
+        // returns current position
         self.position
     }
 }

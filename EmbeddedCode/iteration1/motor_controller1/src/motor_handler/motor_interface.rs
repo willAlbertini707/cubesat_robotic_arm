@@ -1,3 +1,19 @@
+/*
+William Albertini
+
+MotorInterface acts as a high-level driver for 
+motor actuation and state determination. The
+driver uses in(1 or 2) pins to switch the polarity
+of the DC motor leads. The enable pin determines
+how much voltage the motor sees. The quadrature
+encoder states are updated upon a rising or falling
+edge to the selected input pins. MotorInterface uses
+a MotorState to keep track of position and state.
+
+*/
+
+
+
 // external imports
 use arduino_hal::port::{
     mode::Output, 
