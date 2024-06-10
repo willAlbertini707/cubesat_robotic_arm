@@ -1,8 +1,10 @@
 /*
 William Albertini
 
-This module handles the hardware interface. It makes sampling the 
-joysticks more intuitive and less verbose in main.
+This module handles the hardware interface. It acts as a high 
+level driver for the joystick interface. Joystick pins
+utilize the ADC and must use ADC1 as the ADC2 and Wifi
+should not be used together as recomended by espressif
 */
 use esp_idf_svc::hal;
 use hal::gpio::{

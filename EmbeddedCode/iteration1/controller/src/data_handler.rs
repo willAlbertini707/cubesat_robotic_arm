@@ -3,12 +3,11 @@ William Albertini
 
 This module is built to make sending the data easier.
 It provides a single struct that contains all user
-input. This can serialized and sent via TCP/IP to 
+input. This can be sent via UDP/IP to the
 raspberry pi.
 */
-use serde::{Serialize, Deserialize};
 
-#[derive(Debug, Serialize, Deserialize)]
+
 pub struct DataHandler
 {
     x: u8,
@@ -65,8 +64,8 @@ impl DataHandler
     pub fn data_as_bytes(&self) -> [u8; 6]
     {
         // input values are sent over udp and always in known order
+        // for each individual datagram
         [self.x, self.y, self.roll, self.pitch,
         self.button1, self.button2]
     }
-    
 }

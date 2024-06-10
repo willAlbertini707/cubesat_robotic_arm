@@ -1,3 +1,17 @@
+/*
+William Albertini
+
+This code is for the human interface to the 
+robotic arm. It tries to establish a socket 
+connection with a pre-defined IPV4 address 
+and port. Once connection is established, 
+joysticks are sampled at a given rate. When 
+an input is detected, this data is sent over
+the network to the main computer.
+*/
+
+
+
 // gpio imports
 use esp_idf_svc::hal;
 use hal::delay::Delay;
@@ -80,7 +94,7 @@ fn main() -> anyhow::Result<()> {
     println!("wifi connected");
     delay.delay_ms(500);
 
-    // connect to TCP server
+    // connect to UDP server
     let mut socket = wait_for_udp_connection(delay);
     println!("connected");
 
@@ -144,7 +158,7 @@ fn setup_wifi(modem: Modem) -> anyhow::Result<EspWifi<'static>>
     Ok(wifi)
 }
 
-// wait until tcp stream is established
+// wait until UDP connection and return socket
 fn wait_for_udp_connection(delay: Delay) -> UdpSocket
 {
     let socket = UdpSocket::bind("0.0.0.0:0").expect("did not bind");
@@ -156,5 +170,5 @@ fn wait_for_udp_connection(delay: Delay) -> UdpSocket
         }
         delay.delay_ms(250);
     }
-    panic!("No server found");
+    panic!("Unreachable");
 }
