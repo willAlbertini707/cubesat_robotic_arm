@@ -1,3 +1,21 @@
+/*
+William Albertini
+
+This program utilizes two threads to control data transfer.
+The first thread hosts a UDP server and waits for data
+to arrive from ESP32. This data is decoded and piped to the
+other thread, which controls the inverse kinematics and motor
+controller interface. 
+
+Data coming from the controller tells the end-effector how to
+move. If a state is unreachable or a singularity occurs, the 
+end effector position is not updated.
+
+*/
+
+
+
+
 // external imports
 use std::net::
 {

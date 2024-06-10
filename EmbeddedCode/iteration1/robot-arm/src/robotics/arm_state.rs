@@ -1,6 +1,5 @@
 /*
 William Albertini
-AERO 400
 
 
 This module handles the movement of the robotic arm. It uses the 
@@ -9,6 +8,7 @@ joint positions and map them to encoder values. It also keeps
 track of the initial state of the arm, and provides the change in
 joint angles for any move. This is needed for the motor controllers,
 which use relative position, not absolute position.
+
 */
 
 use std::f64::consts::PI;
@@ -44,6 +44,7 @@ impl AngleToEncoderMap
     }
 }
 
+// struct to keep track of motor positions
 #[derive(Copy, Clone, Debug, PartialEq, Eq)]
 pub struct ArmState
 {
@@ -73,6 +74,7 @@ impl ArmState
 
     fn update_kinematic_joints(&mut self, shoulder: u16, elbow: u16, wrist: u16)
     {
+        // these joints are found by the solver
         self.shoulder = shoulder;
         self.elbow = elbow;
         self.wrist = wrist;
@@ -83,6 +85,7 @@ impl Sub for ArmState
 {
     type Output = Self;
 
+    // allows for the comparison of the motor states
     fn sub(self, state: ArmState) -> Self::Output
     {
 
@@ -202,6 +205,7 @@ impl RoboticArmSolver {
 
     fn add_value_wrap(&self, curr_value: u16, add: i32, map_value: u16) -> u16
     {
+        // this function keeps the motor position between 0-max_encoder_value
         if add >= 0
         {
             

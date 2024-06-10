@@ -4,8 +4,18 @@ William Albertini
 this module handle the networking interface
 for the pi and the esp32. It uses a Udp socket
 and holds open a server indefinitely. Udp was found 
-to perform much better than Tcp
+to perform much better than Tcp in terms of real-time
+data transmission. 
+
+NetworkHandler a high level wrapper for Udp sockets and
+maintains a piped connection between the server thread
+and the motor control thread. A new NetWorkHandler needs
+the IPV4 socket that the ESP32 is looking for. In 
+launch_server(), a mspc Sender is used to pipe data 
+to a queue that the main thread reads. 
+
 */
+
 use std::net::{
 	UdpSocket,
 	SocketAddrV4,

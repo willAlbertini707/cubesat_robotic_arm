@@ -3,7 +3,11 @@ William Albertini
 
 The purpose of this module is to incorporate a motor controller
 capable of calculating joint angles and writing those
-to motor controllers
+to motor controllers. This inverse kinematics model is based
+on a python simulation in this project.
+
+Calculated joint angles are in radians and are always positive.
+
 */
 
 // external imports

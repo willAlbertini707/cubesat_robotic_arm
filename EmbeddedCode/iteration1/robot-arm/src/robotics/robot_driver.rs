@@ -1,11 +1,17 @@
 /*
+William Albertini
 
-
-Module was created to interface with robot 
-hardware. Uses Spi0 to 
-
-
-
+This module uses the high level SPI driver to 
+send data to the motor controllers. Three Spi
+structs are created as only one can handle a
+single slave select (SS) line at a given time. Data
+to be sent out on the bus is a u16 and must be
+decoded before transmission (only one byte can
+be sent at a time). This Spi uses CPOL=0 and 
+CPHA=0, which is what the Atmega328p is expecting.
+Bytes are written individually, allowing SS line
+to return high between bytes (trigerring serial transfer
+complete interrupt SPI STC)
 
 */
 

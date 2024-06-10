@@ -1,3 +1,11 @@
+/*
+William Albertini
+
+Custom error enum for this project.
+
+*/
+
+
 use std::fmt;
 
 

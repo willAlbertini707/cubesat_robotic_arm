@@ -3,7 +3,10 @@ William Albertini
 
 This module contains the DataHandler which formats
 the data from the controller. Other objects using 
-controller data interact with this struct
+controller data interact with this struct. It contains
+the data from two joysticks, used to manually control
+the robot
+
 */
 
 
