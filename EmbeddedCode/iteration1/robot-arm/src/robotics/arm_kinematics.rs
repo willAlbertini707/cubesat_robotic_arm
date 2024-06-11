@@ -75,7 +75,7 @@ impl InverseKinematicSolver
 
 		// ---------------------------------- theta 1 --------------------------------------
 		// correct for quadrants
-		if x2 < 0.0 && y2 > 0.0 
+		if x2 < 0.0 && y2 >= 0.0 
 		{
 			gamma += PI;
 		} 
