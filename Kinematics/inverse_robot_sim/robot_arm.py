@@ -82,7 +82,7 @@ class ThreeLinkArm:
         gamma = np.arctan(y2 / x2)
         beta = np.arctan(self.a2 * np.sin(theta2) / (self.a1 + self.a2*np.cos(theta2)))
 
-        if x2 < 0 and y2 > 0:
+        if x2 < 0 and y2 >= 0:
             gamma += np.pi
         elif x2 < 0 and y2 < 0:
             gamma += np.pi
